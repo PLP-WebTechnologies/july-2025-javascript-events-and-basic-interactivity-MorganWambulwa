@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Application</h1>
+        <button id="toggle-theme" class="toggle-btn">Switch to Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- Accordion FAQ Section -->
+        <section id="faq" class="accordion">
+            <h2>Frequently Asked Questions</h2>
+            <button class="accordion-btn">What is this web page?</button>
+            <section class="accordion-content">
+                <p>This is an interactive web page featuring a to-do list, light/dark mode, and an accordion-style FAQ.</p>
+            </section>
+
+            <button class="accordion-btn">How does the to-do list work?</button>
+            <section class="accordion-content">
+                <p>You can add tasks, mark them as completed, and remove them when done!</p>
+            </section>
+
+            <button class="accordion-btn">Can I switch themes?</button>
+            <section class="accordion-content">
+                <p>Yes, you can toggle between light and dark modes by clicking the button at the top.</p>
+            </section>
+        </section>
+
+        <!-- Interactive To-Do List -->
+        <section id="todo">
+            <h2>Your To-Do List</h2>
+            <input type="text" id="new-task" placeholder="Add a new task..." />
+            <button id="add-task-btn">Add Task</button>
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Interactive Web App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
